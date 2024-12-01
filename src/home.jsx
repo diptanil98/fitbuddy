@@ -1,9 +1,12 @@
 import React from "react";
 import Navbar from "./component/nav";
+import { Link } from "react-router-dom";
+import Men from "./men";
 
 function Home() {
   return (
     <>
+    <div className="bg-black">
       <Navbar />
 
       <div
@@ -79,11 +82,12 @@ function Home() {
           }}
         >
           {/* Gradient Overlay with Custom Colors for Men */}
-          <div className="absolute inset-0 bg-gradient-to-br from-blue-600 via-purple-600 to-indigo-800 opacity-0 hover:opacity-50 transition-opacity duration-300"></div>
-          <h1 className="text-2xl font-semibold text-center">Men</h1>
+          <div className="absolute inset-0 bg-gradient-to-br from-blue-600 via-purple-600 to-indigo-800 opacity-0 hover:opacity-50 transition-opacity duration-300 pointer-events-none">
+          </div>
+          <Link to="/men" className="text-2xl font-semibold text-center">Men</Link>
         </div>
 
-        {/* Women Section with 45-degree Gradient Overlay */}
+        
         <div
           className="relative bg-red-500 text-white p-8 transition duration-300 w-1/2 h-60 flex justify-center items-center bg-no-repeat bg-cover hover:scale-105 transform"
           style={{
@@ -130,6 +134,8 @@ function Home() {
           </div>
         </div>
       </footer>
+      </div>
+    
     </>
   );
 }
