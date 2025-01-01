@@ -1,5 +1,6 @@
 import React from "react"
 import { useNavigate } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 
 
@@ -25,7 +26,20 @@ function Navbar() {
           />
           <span className="text-white text-xl font-bold">FitBuddy</span>
         </div>
-
+        <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 flex">
+            <Link to="../home" className="text-white block px-3 py-2 rounded-md text-base font-medium">
+              Home
+            </Link>
+            <Link to="../feedback" className="text-white block px-3 py-2 rounded-md text-base font-medium">
+              About
+            </Link>
+            <Link to="/diet" className="text-white block px-3 py-2 rounded-md text-base font-medium">
+              Diet Chart
+            </Link>
+            <Link to="/calculator" className="text-white block px-3 py-2 rounded-md text-base font-medium">
+              Calorie Calculator
+            </Link>
+          </div>
         {/* Buttons Section */}
         <div className="flex space-x-3">
           <button

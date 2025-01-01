@@ -4,7 +4,7 @@ import Navbar from './nav';
 
 const Content = () => {
   const location = useLocation();
-  const { name, video, l1, l2, l3, info } = location.state || {};                
+  const { name, video, l1, l2, l3, info,title,workout } = location.state || {};                
 
   if (!name) return <p>Loading or no data available...</p>;
 
@@ -13,7 +13,7 @@ const Content = () => {
     <Navbar />
     <div className="flex flex-col text-white py-10 min-h-screen my-14 bg-black overflow-hidden bg-cover">
         <div className="items-center text-center">
-            <h1 className="text-4xl font-bold mb-8 ">Chest Workouts</h1>
+            <h1 className="text-4xl font-bold mb-8 ">{title}</h1>
             <div className="flex items-center justify-center">
                 <iframe 
                     width="800" 
@@ -39,7 +39,7 @@ const Content = () => {
                 </ul>
             </section>
             <section>
-                <h2 className="text-2xl font-semibold text-blue-600 mb-2">Benefits of Push-Ups</h2>
+                <h2 className="text-2xl font-semibold text-blue-600 mb-2">Benefits of {workout}</h2>
                 <ul className="list-disc list-inside pl-4 space-y-1">
                     <li>
                         <strong>Strength Building:</strong> Targets multiple muscle groups, improving upper-body strength and stability.
@@ -63,6 +63,39 @@ const Content = () => {
             </section>
         </main>
     </div>
+    <footer className="bg-gray-800 text-white py-6 ">
+        <div className="container mx-auto px-4">
+          <div className="flex justify-between items-center">
+            <div className="text-2xl font-semibold">
+              <img
+                src="/fitbuddy logo.jpg"
+                alt="FitBuddy"
+                className="h-24 w-24 inline-block"
+              />
+            </div>
+
+            <div className="flex space-x-6">
+              <a href="#" className="hover:text-gray-400 transition duration-300">
+                <i className="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" className="hover:text-gray-400 transition duration-300">
+                <i className="fab fa-twitter"></i>
+              </a>
+              <a href="#" className="hover:text-gray-400 transition duration-300">
+                <i className="fab fa-instagram"></i>
+              </a>
+              <a href="#" className="hover:text-gray-400 transition duration-300">
+                <i className="fab fa-youtube"></i>
+              </a>
+            </div>
+          </div>
+          <div className="mt-4 text-center">
+            <p className="text-sm">
+              © 2024 FitBuddy. All rights reserved. | Empowering your fitness journey.
+            </p>
+          </div>
+        </div>
+      </footer>
 </>
 );
 };

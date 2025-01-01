@@ -7,6 +7,8 @@ const Men = () => {
   const handleClick = () => {
     navigate('/video', {
       state: {
+        workout: "Push-Ups",
+        title:"Chest Workouts",
         name: 'Push-Ups',
         video: 'https://www.youtube.com/embed/SwDe1e7Pz60',
         l1: "Core muscles (abdominals, obliques)",
@@ -20,6 +22,8 @@ const Men = () => {
   const handleClick2 = () => {
     navigate('/video', {
       state: {
+        workout: "Dips",
+        title:"Chest Workouts",
         name: 'Dips',
         video: 'https://www.youtube.com/embed/SwDe1e7Pz60',
         l1: " Core muscles (stabilization)",
@@ -32,6 +36,8 @@ const Men = () => {
   const handleClick3 = () => {
     navigate('/video', {
       state: {
+        workout: "Resistance Band Chest Press",
+        title:"Chest Workouts",
         name: 'Resistance Band Chest Press',
         video: "https://www.youtube.com/embed/Rn-hf5iauTc",
         l1: "Pectoralis major (chest)",
@@ -44,6 +50,8 @@ const Men = () => {
   const handleClick4 = () => {
     navigate('/video', {
       state: {
+        workout: "Front Arm Raises",
+        title:"Arms Workouts",
         name: 'Front Arm Raises',
         video: "https://www.youtube.com/embed/ugPIPY7j-GM",
         l1: "Upper pectorals (upper chest)",
@@ -56,6 +64,8 @@ const Men = () => {
   const handleClick5 = () => {
     navigate('/video', {
       state: {
+        workout: "Dumbell Wrist Curls",
+        title:"Arms Workouts",
         name: 'Dumbell Wrist Curls',
         video: "https://www.youtube.com/embed/u61QWKYgbxI",
         l1: "Flexor carpi radialis",
@@ -68,6 +78,8 @@ const Men = () => {
   const handleClick6 = () => {
     navigate('/video', {
       state: {
+        workout: "Tricep Extension",
+        title:"Arms Workouts",
         name: "Tricep Extension",
         video: "https://www.youtube.com/embed/XiSA-87wYBg",
         l1: "Triceps Brachii: The main muscle targeted, located on the back of your upper arm, responsible for elbow extension.",
@@ -80,6 +92,8 @@ const Men = () => {
   const handleClick7 = () => {
     navigate('/video', {
       state: {
+        workout: "Crunches",
+        title:"AB's Workouts",
         name: 'Crunches',
         video: "https://www.youtube.com/embed/5ER5Of4MOPI",
         l1: "Rectus abdominis (six-pack muscles)",
@@ -92,6 +106,8 @@ const Men = () => {
   const handleClick8 = () => {
     navigate('/video', {
       state: {
+        workout: "Leg Raises",
+        title:"AB's Workouts",
         name: 'Leg Raises',
         video: "https://www.youtube.com/embed/gz-VmPNR2VQ",
         l1: "Rectus abdominis (lower abs)",
@@ -104,6 +120,8 @@ const Men = () => {
   const handleClick9 = () => {
     navigate('/video', {
       state: {
+        workout: "Russian Twists",
+        title:"AB's Workouts",
         name: 'Russian Twists',
         video: "https://www.youtube.com/embed/7kypwrhNGWM",
         l1: "Obliques (internal and external)",
@@ -116,6 +134,8 @@ const Men = () => {
   const handleClick10 = () => {
     navigate('/video', {
       state: {
+        workout: "Reverse Snow Angles",
+        title:"Back Workouts",
         name: 'Reverse Snow Angles',
         video: "https://www.youtube.com/embed/0qLP2RNKX4A" ,
         l1: "Trapezius (upper back)",
@@ -128,6 +148,8 @@ const Men = () => {
   const handleClick11 = () => {
     navigate('/video', {
       state: {
+        workout: "Superman Hold",
+        title:"Back Workouts",
         name: 'Superman Hold',
         video: "https://www.youtube.com/embed/J9zXkxUAfUA",
         l1: "Erector Spinae (lower back)",
@@ -140,6 +162,8 @@ const Men = () => {
   const handleClick12 = () => {
     navigate('/video', {
       state: {
+        workout: "Cobra Stretch Lift",
+        title:"Back Workouts",
         name: 'Cobra Stretch Lifts',
         video: "https://www.youtube.com/embed/k48O2CxvZ3o",
         l1: "Erector spinae (lower back): Helps with spinal extension and back bending.",
@@ -152,6 +176,8 @@ const Men = () => {
   const handleClick13 = () => {
     navigate('/video', {
       state: {
+        workout: "Body Weight Squats",
+        title:"Leg Workouts",
         name: 'Body Weight Squats',
         video: "https://www.youtube.com/embed/8uoaYwS6iFM",
         l1: " Core muscles (stabilization)",
@@ -164,6 +190,8 @@ const Men = () => {
   const handleClick14 = () => {
     navigate('/video', {
       state: {
+        workout: "Single leg Romanian Deadlift",
+        title:"Leg Workouts",
         name: 'Single leg Romanian Deadlift',
         video: "https://www.youtube.com/embed/TVUX-rX8xmE",
         l1: "Hamstrings: The main muscle worked during the lowering and lifting phases, as they are responsible for bending the hip and extending the knee.",
@@ -176,6 +204,8 @@ const Men = () => {
   const handleClick15 = () => {
     navigate('/video', {
       state: {
+        workout: "Calf Raises",
+        title:"Leg Workouts",
         name: "Calf Raises",
         video: "https://www.youtube.com/embed/CtyIVeJH6lI",
         l1: "Gastrocnemius: The large muscle at the back of the lower leg, responsible for the majority of calf muscle strength and size.",
@@ -340,7 +370,39 @@ const Men = () => {
         </div>
     </div>
     
-    
+    <footer className="bg-gray-800 text-white py-6 mt-12">
+        <div className="container mx-auto px-4">
+          <div className="flex justify-between items-center">
+            <div className="text-2xl font-semibold">
+              <img
+                src="/fitbuddy logo.jpg"
+                alt="FitBuddy"
+                className="h-24 w-24 inline-block"
+              />
+            </div>
+
+            <div className="flex space-x-6">
+              <a href="#" className="hover:text-gray-400 transition duration-300">
+                <i className="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" className="hover:text-gray-400 transition duration-300">
+                <i className="fab fa-twitter"></i>
+              </a>
+              <a href="#" className="hover:text-gray-400 transition duration-300">
+                <i className="fab fa-instagram"></i>
+              </a>
+              <a href="#" className="hover:text-gray-400 transition duration-300">
+                <i className="fab fa-youtube"></i>
+              </a>
+            </div>
+          </div>
+          <div className="mt-4 text-center">
+            <p className="text-sm">
+              © 2024 FitBuddy. All rights reserved. | Empowering your fitness journey.
+            </p>
+          </div>
+        </div>
+      </footer>
 </>
 
   );

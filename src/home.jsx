@@ -10,7 +10,7 @@ function Home() {
       <Navbar />
 
       <div
-        className="bg-cover bg-center h-screen flex items-center justify-center text-white overflow-hidden"
+        className="bg-cover bg-center h-screen flex items-center justify-center text-white overflow-hidden mt-20"
         style={{
           backgroundImage:
             "url('https://www.healthkart.com/connect/wp-content/uploads/2016/11/banner-2.jpg')",
@@ -24,7 +24,29 @@ function Home() {
         </div>
       </div>
 
-      
+
+      <div className="bg-gray-800 text-white py-16 columns-3xs">
+        <div className="size-full">
+        <img src="https://i.pinimg.com/236x/30/c5/3c/30c53cd247252235655aefc5338062b7.jpg" alt="fitness" className="w-full h-auto mb-[10px] rounded-[30px]  shadow-lg " />
+        <img src="https://i.pinimg.com/474x/74/24/34/7424342c64dafa61c814ee82590b9117.jpg" alt="fitness" className="w-full h-[250px] rounded-[30px] mb-[10px] shadow-lg " />
+        <img src="https://i.pinimg.com/236x/63/2b/6a/632b6a58fa0da953a9281af6476679da.jpg" alt="fitness" className="w-full h-[350px] rounded-[30px] mb-[10px] shadow-lg " />
+        <img src="https://i.pinimg.com/236x/30/c5/3c/30c53cd247252235655aefc5338062b7.jpg" alt="fitness" className="w-full h-[400px] rounded-[30px] mb-[10px] shadow-lg " />
+        <img src="https://i.pinimg.com/474x/59/08/f2/5908f26c2e49fbf8df8bf4c6399cc292.jpg" alt="fitness" className="w-full h-[300px] rounded-[30px] mb-[10px] shadow-lg " />
+        <img src="https://i.pinimg.com/236x/aa/cf/a5/aacfa5d6136341d4fc53f15e0d0abfcc.jpg" alt="fitness" className="w-full h-[500px] rounded-[30px] mb-[10px] shadow-lg " />
+        <img src="https://i.pinimg.com/474x/41/c1/05/41c1058235945f36ff7ea14b69b58ecc.jpg" alt="fitness" className="w-full h-[500px] rounded-[30px] mb-[10px]  shadow-lg " />
+        <img src="https://i.pinimg.com/236x/40/a8/23/40a823efaeab2222c3c9a2d48ee22208.jpg" alt="fitness" className="w-full h-[200px] rounded-[30px] mb-[10px]  shadow-lg " />
+        <img src="https://i.pinimg.com/236x/01/ce/67/01ce67f515bb1c70549b0f9a7e3abbd4.jpg" alt="fitness" className="w-full h-[300px] rounded-[30px] mb-[10px]  shadow-lg " />
+        <img src="https://i.pinimg.com/236x/4d/8f/9d/4d8f9d9f4806ed1c5a2ccad775245e1d.jpg" alt="fitness" className="w-full h-[500px] rounded-[30px] mb-[10px]  shadow-lg " />
+        <img src="https://i.pinimg.com/474x/dc/24/bd/dc24bdd540ab4709349113dda99b216d.jpg" alt="fitness" className="w-full h-[250px] rounded-[30px] mb-[10px]  shadow-lg " />
+        <img src="https://i.pinimg.com/236x/51/96/3a/51963ad8ab8c695b31b3c53378c92c2e.jpg" alt="fitness" className="w-full h-[500px] rounded-[30px] mb-[10px]  shadow-lg " />
+        <img src="https://i.pinimg.com/236x/46/2d/29/462d29ef67665d1f50fff07ea9c190d6.jpg" alt="fitness" className="w-full h-[400px] rounded-[30px] mb-[10px]  shadow-lg " />
+        <img src="https://i.pinimg.com/236x/cf/bd/10/cfbd1025e4bc35d2bfa7c5391485fd5d.jpg" alt="fitness" className="w-full h-[500px] rounded-[30px] mb-[10px]  shadow-lg " />
+        <img src="https://i.pinimg.com/236x/a4/c2/98/a4c29828cb1ad01d161e801dcfa05979.jpg" alt="fitness" className="w-full h-[300px] rounded-[30px] mb-[10px]  shadow-lg " />
+        <img src="https://i.pinimg.com/236x/f2/31/17/f231175cc4af23ccb0e07f3db7900397.jpg" alt="fitness" className="w-full h-[450px] rounded-[30px] mb-[10px]  shadow-lg " />
+        <img src="https://i.pinimg.com/236x/4d/53/67/4d53671777647ed4c1ec6bd49c54bafa.jpg" alt="fitness" className="w-full h-[500px] rounded-[30px] mb-[10px]  shadow-lg " />
+        </div>
+      </div>
+
       <div className="bg-gray-100 py-16">
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-4xl font-bold text-gray-800 mb-12">Our Services</h2>
@@ -72,6 +94,7 @@ function Home() {
           </div>
         </div>
       </div>
+
       <div className="flex">
         {/* Men Section with Custom Gradient Overlay */}
         <div
