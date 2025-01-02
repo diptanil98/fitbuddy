@@ -1,3 +1,4 @@
+ import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 import React from "react";
 import Signup from "./component/signup"
 import Home from "./home";

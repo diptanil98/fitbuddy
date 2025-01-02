@@ -7,7 +7,7 @@ function Home() {
   return (
     <>
     <div className="bg-black">
-      <Navbar />
+      <Navbar /> 
 
       <div
         className="bg-cover bg-center h-screen flex items-center justify-center text-white overflow-hidden mt-20"
