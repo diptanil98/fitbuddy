@@ -8,7 +8,7 @@ const firebaseConfig = {
   messagingSenderId: "254737679555",
   appId: "1:254737679555:web:bb9959e8014a7a12a48e76",
   measurementId: "G-MP5Y1MWS0T",
-   databaseURL:"https://fit-buddy-b0518-default-rtdb.asia-southeast1.firebasedatabase.app/"
+   databaseURL:"https://console.firebase.google.com/project/fit-buddy-b0518/database/fit-buddy-b0518-default-rtdb/data/~2F"
    
   };
 
