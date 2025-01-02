@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
+import { getAuth, signInWithEmailAndPassword ,signInWithPopup,GoogleAuthProvider} from "firebase/auth";
 import { app } from "../firebase";
 
 const auth = getAuth(app);
@@ -20,6 +20,19 @@ const SigninPage = () => {
         setErrorMessage("Failed to sign in. Please check your credentials.");  // Show error message
       });
   };
+  
+const loginWithGoogle =()=>{
+  const auth = getAuth(app)
+  const provider = new GoogleAuthProvider()
+signInWithPopup(auth,provider)
+.then((result)=>{
+  console.log(result)
+})
+.catch(err=>{
+  console.log(err)
+})
+}
+
 
   return (
     <div className="bg-cover bg-center h-screen flex items-center justify-center text-white overflow-hidden" style={{ backgroundImage: "url('/bg.jpg')" }}>
@@ -60,7 +73,7 @@ const SigninPage = () => {
             Submit
           </button>
           <button
-          onClick={signinUser}
+          onClick={loginWithGoogle}
             type="submit"
             className="w-full py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition duration-200"
           >
