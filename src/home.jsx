@@ -119,8 +119,9 @@ function Home() {
           }}
         >
           {/* Gradient Overlay with 45-degree angle */}
-          <div className="absolute inset-0 bg-gradient-to-br from-pink-500 via-yellow-500 to-orange-600 opacity-0 hover:opacity-50 transition-opacity duration-300"></div>
-          <h1 className="text-2xl font-semibold text-center">Women</h1>
+          <div className="absolute inset-0 bg-gradient-to-br from-blue-600 via-purple-600 to-indigo-800 opacity-0 hover:opacity-50 transition-opacity duration-300 pointer-events-none">
+          </div>
+          <Link to="/women" className="text-2xl font-semibold text-center">Women</Link>
         </div>
       </div>
 

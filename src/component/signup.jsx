@@ -1,17 +1,22 @@
 import React, { useState } from "react";
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 import { app } from "../firebase";
+import { useNavigate } from "react-router-dom"; // Import useNavigate
 
 const auth = getAuth(app);
 
 const Signup = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate(); // Initialize useNavigate
 
   const createUser = (e) => {
-    e.preventDefault();  // Prevent form submission default behavior
+    e.preventDefault(); // Prevent form submission default behavior
     createUserWithEmailAndPassword(auth, email, password)
-      .then((value) => alert("Success"))
+      .then((value) => {
+        alert("Signup Successful");
+        navigate("/home"); // Redirect to home page
+      })
       .catch((error) => alert("Error: " + error.message)); // Handle error
   };
 

@@ -5,6 +5,7 @@ import Home from "./home";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Login from "./component/login";
 import Men from "./men";
+import Women from "./women";
  import Content from "./component/video";
  import Calorie from "./component/calculator";
  import DietChartPage from "./component/diet";
@@ -22,6 +23,8 @@ function App() {
         <Route path="/diet" element={<DietChartPage />} />
         <Route path="/feedback" element={<ContactUs />} />
         <Route path="/home" element={<Home />} />
+        <Route path="/women" element={<Women />} />
+
 
       </Routes>
 
