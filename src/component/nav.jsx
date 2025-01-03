@@ -30,14 +30,14 @@ function Navbar() {
             <Link to="../home" className="text-white block px-3 py-2 rounded-md text-base font-medium">
               Home
             </Link>
-            <Link to="../feedback" className="text-white block px-3 py-2 rounded-md text-base font-medium">
-              About
-            </Link>
             <Link to="/diet" className="text-white block px-3 py-2 rounded-md text-base font-medium">
               Diet Chart
             </Link>
             <Link to="/calculator" className="text-white block px-3 py-2 rounded-md text-base font-medium">
               Calorie Calculator
+            </Link>
+            <Link to="../feedback" className="text-white block px-3 py-2 rounded-md text-base font-medium">
+              Contact Us
             </Link>
           </div>
         {/* Buttons Section */}
