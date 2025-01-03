@@ -39,14 +39,6 @@ const Signup = () => {
             />
           </div>
           <div>
-            <label htmlFor="username" className="block text-white text-sm font-medium mb-1">Username:</label>
-            <input
-              type="text"
-              id="username"
-              className="w-full px-3 py-2 border border-gray-600 rounded bg-gray-700 text-white focus:outline-none focus:border-blue-500"
-            />
-          </div>
-          <div>
             <label htmlFor="password" className="block text-white text-sm font-medium mb-1">Password:</label>
             <input
               onChange={(e) => setPassword(e.target.value)}
