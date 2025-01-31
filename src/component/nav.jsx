@@ -1,11 +1,29 @@
-import React from "react"
+import React,{useState,useEffect} from "react"
 import { useNavigate } from 'react-router-dom';
+import { getAuth, onAuthStateChanged, signOut } from "firebase/auth";
 import { Link } from "react-router-dom";
 
 
+const auth = getAuth();
 
 function Navbar() {
+  const [user, setUser] = useState(null);
   const navigate = useNavigate();
+
+useEffect(() => {
+
+  const unsubscribe = onAuthStateChanged(auth, (currentuser) => {
+      setUser(currentuser);
+    });
+    return () => unsubscribe();
+    },[]);
+    const handleLogout = async () => {
+      await signOut(auth);
+      setUser(null)
+      navigate("/login"); // Redirects to the login page after logout
+    };
+
+
   const handleClick = () => {
     navigate('/signup');
   };
@@ -40,8 +58,15 @@ function Navbar() {
               Contact Us
             </Link>
           </div>
+
         {/* Buttons Section */}
         <div className="flex space-x-3">
+          {user? (
+            <div className="flex items-center space-x-3">
+              <span className="text-white"> {user.email || "Profile"}</span>
+              <button onClick={handleLogout} className="text-white bg-red-600 hover:bg-red-700 py-2 px-4 rounded">
+                Logout</button>
+                </div>):(<>
           <button
             onClick={handleClick}
             className="text-white bg-red-600 hover:bg-red-700 py-2 px-4 rounded"
@@ -54,6 +79,7 @@ function Navbar() {
           >
             Log In
           </button>
+          </>)}
         </div>
       </nav>
 </>

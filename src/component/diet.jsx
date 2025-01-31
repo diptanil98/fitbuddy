@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Document, Packer, Paragraph, TextRun } from "docx";
 import { saveAs } from "file-saver";
-
+import Navbar from './nav';
 const DietChartPage = () => {
   const [customDiet, setCustomDiet] = useState({
     gender: "",
@@ -73,10 +73,13 @@ const DietChartPage = () => {
     });
   };
   
-  
+ 
 
   return (
-    <div className="min-h-screen bg-gradient-to-r from-green-300 via-blue-300 to-purple-300 p-8">
+    <>
+    
+    <Navbar />
+    <div className="min-h-screen bg-gradient-to-r from-green-300 via-blue-300 to-purple-300 p-8 mt-16">
     <header className="text-center mb-12">
       <h1 className="text-5xl font-extrabold text-green-800 drop-shadow-xl animate-text bg-gradient-to-r from-green-700 via-blue-700 to-purple-700 bg-clip-text text-transparent">
         Personalized Diet Charts
@@ -212,6 +215,7 @@ const DietChartPage = () => {
         </button>
       </div>
     </div>
+    </>
   );
 };
 
